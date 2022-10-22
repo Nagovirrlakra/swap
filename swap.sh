@@ -40,5 +40,6 @@ sudo swapoff -a
 
 sudo swapon -a
 
-fi 
+done 
 exit
+fi
