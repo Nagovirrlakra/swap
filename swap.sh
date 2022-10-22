@@ -20,15 +20,15 @@ if [[ $comm == "-c" ]]; then
 
 read out
 
-(sudo fallocate -l $out /swapfile)
+sudo fallocate -l $out /swapfile
 
-(sudo chmod 600 /swapfile)
+sudo chmod 600 /swapfile
 
-(sudo mkswap /swapfile)
+sudo mkswap /swapfile
 
-(sudo swapon /swapfile)
+sudo swapon /swapfile
 
-(echo "$SWAP_PATH   none    swap    sw    0   0" | sudo tee /etc/fstab -a) # Add to fstab
+echo "/swapfile   none    swap    sw    0   0" | sudo tee /etc/fstab -a # Add to fstab
 
 while true
 
@@ -36,11 +36,9 @@ echo "Swapfile has been Created and Actvated"
 
 [[ if $comm == "-d" ]]; then
 
-$(sudo swapoff -a)
+sudo swapoff -a
 
-$(sudo swapon -a)
+sudo swapon -a
 
 fi 
 exit
-
-
