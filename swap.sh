@@ -16,7 +16,7 @@ List Of Commands:
 -c : Creating The Swap File By Its Size ( swap -c <sizeof> )
 -d : Delete a swapfile"
 
-if [[ $comm == "-c" ]]; do
+if [[ $comm == "-c" ]]; then
 
 read out
 
