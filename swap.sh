@@ -16,7 +16,7 @@ List Of Commands:
 -c : Creating The Swap File By Its Size ( swap -c <sizeof> )
 -d : Delete a swapfile"
 
-if [[ $comm == "-c" ]]; then
+if [[ $comm == "-c" ]]; do
 
 read out
 
@@ -34,7 +34,7 @@ while true
 
 echo "Swapfile has been Created and Actvated"
 
-[[ if $comm == "-d" ]]; then
+[[ if $comm == "-d" ]]; do
 
 sudo swapoff -a
 
