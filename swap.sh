@@ -41,5 +41,5 @@ sudo swapoff -a
 sudo swapon -a
 
 done 
-exit
 fi
+exit
