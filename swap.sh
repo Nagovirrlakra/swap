@@ -13,7 +13,7 @@ echo "Swap Command created with no purpose by Nagov Irrlakra"
 echo "List Of Commands:"
 echo "-h : Show This Help"
 echo "-c : Creating The Swap File By Its Size ( swap -c <sizeof> )"
--d : Delete a swapfile
+echo "-d : Delete a swapfile"
 
 if [[ $comm == "-c" ]]; then
 
