@@ -28,7 +28,7 @@ read out
 
 (sudo swapon /swapfile)
 
-(echo "$SWAP_PATH   none    swap    sw    0   0" | sudo tee /etc/fstab -a # Add to fstab)
+(echo "$SWAP_PATH   none    swap    sw    0   0" | sudo tee /etc/fstab -a) # Add to fstab
 
 while true
 
